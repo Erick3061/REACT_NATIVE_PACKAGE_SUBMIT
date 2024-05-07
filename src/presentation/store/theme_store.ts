@@ -19,6 +19,7 @@ interface ThemeActions {
 const storeApi: StateCreator<ThemeState> = set => ({
   mode: 'system',
   theme: ThemeLight,
+  color: '#01fff0',
 
   updateMode: (mode: ThemeMode) => set({mode}),
   updateTheme: (theme: ThemeApp) => set({theme}),
